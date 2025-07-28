@@ -26,6 +26,24 @@ const MenuLinks = [
     },
 ]
 
+const DropdownLinks = [
+    {
+        id:1,
+        name:"Trending Products",
+        link:"/#",
+    },
+     {
+        id:2,
+        name:"best Selling",
+        link:"/#",
+    },
+     {
+        id:3,
+        name:"Top Rated",
+        link:"/#",
+    },
+]
+
 const Navbar = () => {
   return (
     <div className='bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40'>
@@ -61,7 +79,21 @@ const Navbar = () => {
                                 </a>
                                 {/**Dropdown Links */}
                                 <div>
-                                    
+                                    <ul>
+                                        {
+                                            DropdownLinks.map((data, index)=>(
+                                                <li>
+                                                    <a 
+                                                    className='text-gray-500 hover:text-black dark:hover:text-white duration-200'
+                                                    href={data.link}>
+                                                        {data.name}
+                                                    </a>
+                                                </li>
+                                            ))
+                                        }
+                                    </ul>
+
+
                                 </div>
                             </li>
                         </ul>
