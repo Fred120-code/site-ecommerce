@@ -78,13 +78,16 @@ const Navbar = () => {
                                     </span>
                                 </a>
                                 {/**Dropdown Links */}
-                                <div>
-                                    <ul>
+                                <div className=' absolute z-[9999] hidden group-hover:block w-[200px] rounded-md 
+                                    bg-white shadow-md dark:bg-gray-900 p-2 dark:text-white'>
+                                    <ul className=' space-y-2'>
                                         {
                                             DropdownLinks.map((data, index)=>(
                                                 <li>
                                                     <a 
-                                                    className='text-gray-500 hover:text-black dark:hover:text-white duration-200'
+                                                    className='text-gray-500 hover:text-black dark:hover:text-white 
+                                                            duration-200 p-2 inline-block hover:bg-primary/20 w-full
+                                                             rounded-md font-semibold'
                                                     href={data.link}>
                                                         {data.name}
                                                     </a>
