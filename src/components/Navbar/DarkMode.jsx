@@ -7,6 +7,7 @@ const DarkMode = () => {
   const element = document.documentElement;
   console.log(element);
   
+  // set theme to locaStorage and html element
   React.useEffect(()=>{
     localStorage.setItem("theme", theme);
     if(theme === "dark"){
@@ -14,14 +15,14 @@ const DarkMode = () => {
     }else{
         element.classList.remove("dark")
     }
-  })
+  }, [theme])
   return (
     <div className=' relative'>
         <img 
         onClick={()=> setTheme(theme === "dark" ? "light" : "dark")}
         src={LightButton} alt="" className={`w-12 cursor-pointer absolute right-0 z-10 ${theme === "dark" ? "opacity-0" : "opacity-100"
         } transition-all duration-300`} />
-         <img src={DarkButton} alt="" className={`w-12 cursor-pointer `} />
+        <img src={DarkButton} alt="" className={`w-12 cursor-pointer `} />
     </div>
   )
 }
