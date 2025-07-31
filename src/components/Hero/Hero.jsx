@@ -4,6 +4,7 @@ import ordi from '../../assets/ordi.png'
 import man_casque from '../../assets/man_casque.png'
 import casque_1 from '../../assets/casque_1.png'
 import { data } from 'autoprefixer';
+import Button from '../Shared/Button';
 
 
 const Hero = () => {
@@ -61,14 +62,16 @@ const Hero = () => {
                         <h1 className='text-5xl uppercase text-white dark:text-white/5 sm:text-[80px]
                          md:text-[100px] font-bold xl:text-[150px]'>{data.title2}</h1>
                         <div className=''>
-                          <button>Shop Now</button>
+                          <Button text="Shop By Category"
+                          bgColor="bg-primary"
+                          textColor="text-white"/>
                         </div>
                       </div>
                       {/**Img section */}
                       <div className='order-1 sm:order-2'>
                         <div>
                           <img src={data.img} alt="" className='w-[250px] h-[300px]
-                             sm:h-[450px] sm:scale-105 lg:scale-110 object-contain
+                             sm:h-[450px] sm:w-[450px] sm:scale-105 lg:scale-110 object-contain
                              mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] relative z-40'/>
                         </div>
                       </div>
