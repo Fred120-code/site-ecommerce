@@ -34,7 +34,7 @@ const DropdownLinks = [
     },
      {
         id:2,
-        name:"best Selling",
+        name:"Best Selling",
         link:"/#",
     },
      {
