@@ -3,13 +3,6 @@ import casque_1 from '../../assets/casque_1.png'
 import xbox_1 from '../../assets/xbox_1.png'
 import man_casque from '../../assets/man_casque.png'
 
-
-
-/** 
-import casque_2 from '../../assets/imgCategory/casque_2.png'
-import casque_3 from '../../assets/imgCategory/casque_3.png'
-import xbox_1 from '../../assets/xbox_1.png'
-*/
 const Category = () => {
   return (
     <div className='py-3'>

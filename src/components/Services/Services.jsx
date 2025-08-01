@@ -1,9 +1,8 @@
-import React from 'react'
-import {
-    FaCarSide, FaHeadphoneAlt, FaWallet, FaCheckCircle
-} from 'react-icons/fa'
+import { FaCarSide, FaHeadphoneAlt, FaWallet, FaCheckCircle, } from 'react-icons/fa'
 
-const ServiceData = [
+const Services = () => {
+
+  const ServiceData = [
     {
         id:1,
         icon:<FaCarSide className='text-4xl md:text-5xl text-primary'/>,
@@ -23,19 +22,28 @@ const ServiceData = [
         description:"All payment Secure",
     },
     {
-        id:1,
+        id:4,
         icon:<FaHeadphoneAlt className='text-4xl md:text-5xl text-primary'/>,
         title:"Online Support 24/7",
         description:"Technical Support 24/7",
     },
-]
+];
 
-const Services = () => {
   return (
     <div>
         <div className='container'>
-            <div className='grid'>
-                <div></div>
+            <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 gap-y-8'>
+                {
+                    ServiceData.map((data)=>(
+                        <div key={data.id}>
+                            {data.icon}
+                            <div>
+                                <h2>{data.title}</h2>
+                                <p>{data.description}</p>
+                            </div>
+                        </div>
+                    ))
+                }
             </div>
         </div>
     </div>
