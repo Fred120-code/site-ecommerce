@@ -13,7 +13,7 @@ const BannerData = {
   image: casque_2,
   title2:"Air Solo Bass",
   title3:"Winter Sale",
-  title4:"Lorem ipsun sit amet consectetur adipisicing alit. eaque reiciendis",
+  title4:"Lorem Ipsun Sit amet consectetur adipisicing alit. eaque reiciendis",
   bgColor:"#f42c37",
 }
 
