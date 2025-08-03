@@ -8,7 +8,7 @@ const ProductsData = [
         id:1,
         img: casque_2,
         title:"Boat HeadPhone",
-        price:"120",
+        price:"120",   
         aosDelay:"0"
     },
      {
@@ -36,11 +36,12 @@ const ProductsData = [
 const Product = () => {
   return (
     <div>
-        <div className="container">
+        <div className=" container flex flex-col gap-8">
             {/** Head section*/}
             <Heading title="Our Product"
                 subtitle="Explore Our Products"/>
             {/** Body section*/}
+            <ProductCard data = {ProductsData}/>
             <ProductCard data = {ProductsData}/>
         </div>
     </div>
