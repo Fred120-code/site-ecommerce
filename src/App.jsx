@@ -5,9 +5,11 @@ import Category2 from './components/Category/Category2'
 import Services from './components/Services/Services'
 import Banner from './components/Banner/Banner'
 import casque_2 from '../src/assets/casuqe_2.png'
+import casque_8 from '../src/assets/casque_8.png'
 import Product from './components/Product/Product'
+import Blogs from './components/Blogs/Blogs'
 
-const BannerData = {
+const BannerData1 = {
   discount:"30% OFF", 
   title:"Fine Smile",
   date:"10 Jan to 28 jan",
@@ -18,6 +20,16 @@ const BannerData = {
   bgColor:"#f42c37",
 }
 
+const BannerData2 = {
+  discount:"30% OFF", 
+  title:"Fine Smile",
+  date:"10 Jan to 28 jan",
+  image: casque_8,
+  title2:"Air Solo Bass",
+  title3:"Winter Sale",
+  title4:"Lorem Ipsun Sit amet consectetur adipisicing alit. eaque reiciendis",
+  bgColor:"#2dcc6f",
+}
 const App = () => {
   return (
     <div className='bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden'>
@@ -26,8 +38,10 @@ const App = () => {
       <Category/>
       <Category2/>
       <Services/>
-      <Banner data = {BannerData}/>
+      <Banner data = {BannerData1}/>
       <Product/>
+      <Banner data = {BannerData2}/>
+      <Blogs/>
     </div>
   )
 }
