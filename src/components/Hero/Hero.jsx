@@ -1,11 +1,9 @@
 import React from 'react'
 import Slider from 'react-slick';
-import ordi from '../../assets/ordi.png'
-import man_casque from '../../assets/man_casque.png'
+import doubleWatch from '../../assets/doubleWatch.png'
+import casque_9 from '../../assets/casque_9.png'
 import casque_1 from '../../assets/casque_1.png'
-import { data } from 'autoprefixer';
 import Button from '../Shared/Button';
-
 
 const Hero = () => {
    const settings = {
@@ -29,14 +27,14 @@ const Hero = () => {
    },
      {
       id:2,
-      img: ordi,
+      img: doubleWatch,
       subtitle: "Beats Solo",
       title: "Wireless",
       title2:"Headphone",
      },
      {
       id:3,
-      img: man_casque,
+      img: casque_9,
       subtitle: "Beats Solo",
       title: "Wireless",
       title2:"Headphone",

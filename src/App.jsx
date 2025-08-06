@@ -5,7 +5,7 @@ import Category2 from './components/Category/Category2'
 import Services from './components/Services/Services'
 import Banner from './components/Banner/Banner'
 import casque_2 from '../src/assets/casuqe_2.png'
-import casque_8 from '../src/assets/casque_8.png'
+import watch1 from '../src/assets/watch1.png'
 import Product from './components/Product/Product'
 import Blogs from './components/Blogs/Blogs'
 
@@ -24,7 +24,7 @@ const BannerData2 = {
   discount:"30% OFF", 
   title:"Fine Smile",
   date:"10 Jan to 28 jan",
-  image: casque_8,
+  image: watch1,
   title2:"Air Solo Bass",
   title3:"Winter Sale",
   title4:"Lorem Ipsun Sit amet consectetur adipisicing alit. eaque reiciendis",

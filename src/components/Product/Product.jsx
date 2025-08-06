@@ -4,7 +4,8 @@ import ProductCard from './ProductCard'
 import casque_6 from '../../assets/casqueu_6.png'
 import airpod_1 from '../../assets/airpod_1.png'
 import airpod_2 from '../../assets/airpod_2.png'
-import casque_3 from '../../assets/casque_3.png'
+import watch1 from '../../assets/watch1.png'
+import doubleWatch from '../../assets/doubleWatch.png'
 import casque_4 from '../../assets/casque_4.png'
 import casque_8 from '../../assets/casque_8.png'
 
@@ -25,7 +26,7 @@ const ProductsData1 = [
     },
      {
         id:3,
-        img: casque_3,
+        img: watch1,
         title:"Goggles",
         price:"320",
         aosDelay:"400"
@@ -55,7 +56,7 @@ const ProductsData2 = [
     },
      {
         id:3,
-        img: casque_3,
+        img: doubleWatch,
         title:"Goggles",
         price:"320",
         aosDelay:"400"

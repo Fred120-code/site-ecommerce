@@ -1,6 +1,6 @@
 import Button from "../Shared/Button"
 import airpod from "../../assets/airpod_1.png"
-import casque_3 from '../../assets/casque_3.png'
+import watch4 from '../../assets/watch4.png'
 import pc_2 from '../../assets/pc_2.png'
 
 const Category = () => {
@@ -26,8 +26,8 @@ const Category = () => {
                     <img src={airpod} alt="" className="w-[170px] h-[170px] absolute bottom-20 left-19 right-0"/>
                 </div>
                 {/**second col */}
-                <div className="py-10 pl-5 bg-gradient-to-br from-brandYellow/90 
-                    to-brandYellow/70 text-white rounded-3xl relative h-[320px] flex items-end">
+                <div className="py-10 pl-5 bg-gradient-to-br from-brandYellow 
+                    to-brandYellow text-white rounded-3xl relative h-[320px] flex items-end">
                     <div className="z-10">
                         <div className="mb-4">
                             <p className="text-3xl text-gray-300 font-bold">Enjoy</p>
@@ -40,7 +40,7 @@ const Category = () => {
                             />
                         </div>
                     </div>
-                    <img src={casque_3} alt="" className="w-[220px] h-[220px] -right-4 absolute bottom-20 lg:top-[-10px]"/>
+                    <img src={watch4} alt="" className="w-[200px] h-[210px] -right-2 absolute bottom-15 lg:top-[-1px]"/>
                 </div>
                 {/**third col */}
                 <div className=" col-span-2 py-10 pl-5 bg-gradient-to-br from-primary 

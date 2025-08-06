@@ -9,8 +9,10 @@ const ProductCard = ({data}) => {
                 data.map((data)=>(
                     <div hey = {data.id} className='group'>
                         <div className='relative'>
-                            <img src={data.img} alt="" className='
-                            h-[280px] w-[240px] object-cover rounded-md bg-gray-300/40' />
+                           <div className=' h-[280px] w-[340px] bg-gray-300/40 flex justify-center items-center rounded-2xl'>
+                             <img src={data.img} alt="" className='
+                            h-[265px] w-[240px] object-cover' />
+                           </div>
                             {/**hover Button */}
                             <div className=' hidden group-hover:flex absolute top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2 h-full w-full
                                     text-center group-hover:backdrop-blur-sm justify-center items-center duration-300'>

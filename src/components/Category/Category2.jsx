@@ -1,7 +1,7 @@
 import Button from "../Shared/Button"
-import casque_1 from '../../assets/casque_1.png'
+import casque_10 from '../../assets/casque_10.png'
 import xbox_1 from '../../assets/xbox_1.png'
-import man_casque from '../../assets/man_casque.png'
+import watch1 from '../../assets/watch1.png'
 
 const Category = () => {
   return (
@@ -41,7 +41,7 @@ const Category = () => {
                             />
                         </div>
                     </div>
-                    <img src={man_casque} alt="" className="w-[190px] h-[170px] absolute bottom-0 left-19 right-0 
+                    <img src={watch1} alt="" className="w-[190px] h-[170px] absolute bottom-0 left-19 right-0 
                         drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)]"/>
                 </div>
                 {/**third col */}
@@ -59,7 +59,7 @@ const Category = () => {
                             />
                         </div>
                     </div>
-                    <img src={casque_1} alt="" className="w-[150px] absolute bottom-0 left-19 right-0 
+                    <img src={casque_10} alt="" className="w-[150px] absolute bottom-0 left-19 right-0 
                         drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)]"/>
                 </div>
             </div>
