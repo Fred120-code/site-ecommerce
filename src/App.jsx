@@ -8,6 +8,7 @@ import casque_2 from '../src/assets/casuqe_2.png'
 import watch1 from '../src/assets/watch1.png'
 import Product from './components/Product/Product'
 import Blogs from './components/Blogs/Blogs'
+import Partners from './components/Partners/Partners'
 
 const BannerData1 = {
   discount:"30% OFF", 
@@ -42,6 +43,7 @@ const App = () => {
       <Product/>
       <Banner data = {BannerData2}/>
       <Blogs/>
+      <Partners/>
     </div>
   )
 }
