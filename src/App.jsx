@@ -11,6 +11,7 @@ import Blogs from './components/Blogs/Blogs'
 import Partners from './components/Partners/Partners'
 import Footer from './components/Footer/Footer'
 import Popup from './components/Popup/Popup'
+import { useState } from 'react'
 
 const BannerData1 = {
   discount:"30% OFF", 
@@ -34,10 +35,16 @@ const BannerData2 = {
   bgColor:"#2dcc6f",
 }
 const App = () => {
+
+  const [orderPopup, setOrderPopup] = useState(true)
+
+  const handleOrderPopup = () =>{
+    setOrderPopup(!orderPopup)
+  }
   return (
     <div className='bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden'>
-      <Navbar />
-      <Hero/>
+      <Navbar handleOrderPopup={handleOrderPopup}/>
+      <Hero handleOrderPopup={handleOrderPopup}/>
       <Category/>
       <Category2/>
       <Services/>
@@ -47,9 +54,9 @@ const App = () => {
       <Blogs/>
       <Partners/>
       <Footer/>
-      <Popup/>
+      <Popup orderPopup={orderPopup}
+              handleOrderPopup={handleOrderPopup}/>
     </div>
   )
 }
-
 export default App

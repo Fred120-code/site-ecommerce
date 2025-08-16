@@ -5,7 +5,7 @@ import casque_9 from '../../assets/casque_9.png'
 import casque_1 from '../../assets/casque_1.png'
 import Button from '../Shared/Button';
 
-const Hero = () => {
+const Hero = ({handleOrderPopup}) => {
    const settings = {
     dots: true,
     infinite: true,
@@ -62,7 +62,9 @@ const Hero = () => {
                         <div className=''>
                           <Button text="Shop By Category"
                           bgColor="bg-primary"
-                          textColor="text-white"/>
+                          textColor="text-white"
+                          handleOrderPopup={handleOrderPopup}
+                          />
                         </div>
                       </div>
                       {/**Img section */}
