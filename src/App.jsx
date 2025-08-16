@@ -10,6 +10,7 @@ import Product from './components/Product/Product'
 import Blogs from './components/Blogs/Blogs'
 import Partners from './components/Partners/Partners'
 import Footer from './components/Footer/Footer'
+import Popup from './components/Popup/Popup'
 
 const BannerData1 = {
   discount:"30% OFF", 
@@ -46,6 +47,7 @@ const App = () => {
       <Blogs/>
       <Partners/>
       <Footer/>
+      <Popup/>
     </div>
   )
 }
