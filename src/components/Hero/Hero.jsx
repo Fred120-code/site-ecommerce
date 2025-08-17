@@ -63,7 +63,7 @@ const Hero = ({handleOrderPopup}) => {
                           <Button text="Shop By Category"
                           bgColor="bg-primary"
                           textColor="text-white"
-                          handleOrderPopup={handleOrderPopup}
+                          handler={handleOrderPopup}
                           />
                         </div>
                       </div>
