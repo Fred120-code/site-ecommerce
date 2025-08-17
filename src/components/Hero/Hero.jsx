@@ -99,7 +99,11 @@ const Hero = ({ handleOrderPopup }) => {
                   </div>
                   {/**Img section */}
                   <div className="order-1 sm:order-2">
-                    <div>
+                    <div
+                      data-aos="zoom-in"
+                      data-aos-once="true"
+                      className="relative z-10"
+                    >
                       <img
                         src={data.img}
                         alt=""
