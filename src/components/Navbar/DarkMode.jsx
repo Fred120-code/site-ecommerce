@@ -19,7 +19,7 @@ const DarkMode = () => {
     }
   }, [theme]);
   return (
-    <div className=" relative">
+    <div className="relative">
       <img
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         src={LightButton}
